@@ -14,3 +14,6 @@ Version="1"
             "-dxdebug.remote_host=172.17.0.1",
         ]
     ]
+    envvars=[
+        "XDEBUG_CONFIG=${XDEBUG_CONFIG}"
+    ]
