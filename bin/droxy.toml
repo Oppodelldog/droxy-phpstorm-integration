@@ -1,0 +1,6 @@
+Version="1"
+
+[[command]]
+    name="php7.2"
+    image="php7.2"
+    removeContainer=true
