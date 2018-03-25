@@ -6,4 +6,5 @@ Version="1"
     removeContainer=true
     volumes=[
         "/tmp:/tmp",
+        "/home/nils/PhpstormProjects/droxy-phpstorm-integration:/home/nils/PhpstormProjects/droxy-phpstorm-integration"
     ]
