@@ -8,3 +8,9 @@ Version="1"
         "/tmp:/tmp",
         "/home/nils/PhpstormProjects/droxy-phpstorm-integration:/home/nils/PhpstormProjects/droxy-phpstorm-integration"
     ]
+    replaceArgs=[
+        [
+            "-dxdebug.remote_host=127.0.0.1",
+            "-dxdebug.remote_host=172.17.0.1",
+        ]
+    ]
