@@ -31,3 +31,9 @@ Version="1"
     image="php7.2"
     template="basic-php-command"
     command="vendor/bin/phpmd"
+
+[[command]]
+    name="phpcs"
+    image="php7.2"
+    template="basic-php-command"
+    command="vendor/bin/phpcs"

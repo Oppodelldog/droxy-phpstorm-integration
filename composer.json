@@ -1,7 +1,6 @@
 {
-    "name": "nils/droxy-phpstorm-integration",
-    "description": "a sample project to demonstrate the use of droxy to integrate php to phpstorm",
     "require-dev": {
-        "phpmd/phpmd": "^2.6"
+        "phpmd/phpmd": "^2.6",
+        "squizlabs/php_codesniffer": "*"
     }
 }
