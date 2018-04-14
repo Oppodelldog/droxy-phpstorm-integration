@@ -9,7 +9,8 @@ Version="1"
     workDir="/home/nils/PhpstormProjects/droxy-phpstorm-integration"
     volumes=[
         "/tmp:/tmp",
-        "/home/nils/PhpstormProjects/droxy-phpstorm-integration:/home/nils/PhpstormProjects/droxy-phpstorm-integration"
+        "/home/nils/PhpstormProjects/droxy-phpstorm-integration:/home/nils/PhpstormProjects/droxy-phpstorm-integration",
+        "/home/nils:/home/nils"
     ]
 
 [[command]]
