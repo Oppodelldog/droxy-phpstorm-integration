@@ -1,12 +1,23 @@
 Version="1"
 
 [[command]]
-    name="php7.2"
-    image="php7.2"
+    isTemplate=true
+    name="basic-php-command"
+    entrypoint="php"
     removeContainer=true
+    impersonate=true
+    workDir="/home/nils/PhpstormProjects/droxy-phpstorm-integration"
     volumes=[
         "/tmp:/tmp",
         "/home/nils/PhpstormProjects/droxy-phpstorm-integration:/home/nils/PhpstormProjects/droxy-phpstorm-integration"
+    ]
+
+[[command]]
+    name="php7.2"
+    image="php7.2"
+    template="basic-php-command"
+    envvars=[
+        "XDEBUG_CONFIG=${XDEBUG_CONFIG}"
     ]
     replaceArgs=[
         [
@@ -14,6 +25,9 @@ Version="1"
             "-dxdebug.remote_host=172.17.0.1",
         ]
     ]
-    envvars=[
-        "XDEBUG_CONFIG=${XDEBUG_CONFIG}"
-    ]
+
+[[command]]
+    name="phpmd"
+    image="php7.2"
+    template="basic-php-command"
+    command="vendor/bin/phpmd"
