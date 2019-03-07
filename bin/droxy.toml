@@ -6,7 +6,7 @@ Version="1"
     entrypoint="php"
     removeContainer=true
     impersonate=true
-    workDir="${PWD}"
+    workDir="/home/nils/PhpstormProjects/droxy-phpstorm-integration"
     volumes=[
         "/tmp:/tmp",
         "/home/nils/PhpstormProjects/droxy-phpstorm-integration:/home/nils/PhpstormProjects/droxy-phpstorm-integration",
@@ -30,13 +30,17 @@ Version="1"
 [[command]]
     name="phpmd"
     image="php7.2"
-    workDir="/home/nils/PhpstormProjects/droxy-phpstorm-integration"
     template="basic-php-command"
     command="vendor/bin/phpmd"
 
 [[command]]
     name="phpcs"
     image="php7.2"
-    workDir="/home/nils/PhpstormProjects/droxy-phpstorm-integration"
     template="basic-php-command"
     command="vendor/bin/phpcs"
+
+[[command]]
+    name="composer"
+    image="php7.2"
+    template="basic-php-command"
+    command="composer.phar"
