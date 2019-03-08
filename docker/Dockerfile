@@ -7,6 +7,11 @@ RUN yes | pecl install xdebug \
 
 RUN apt-get update && apt-get install -y git
 
+#RUN pecl install mongodb && echo "extension=mongodb.so" > /usr/local/etc/php/conf.d/ext-mongodb.ini
+RUN apt-get install zlib1g-dev
+RUN docker-php-ext-install zip
+#RUN apt-get install php7.2-mongodb
+
 ENTRYPOINT ["php"]
 
 

@@ -44,3 +44,12 @@ Version="1"
     image="php7.2"
     template="basic-php-command"
     command="composer.phar"
+
+[[command]]
+    name="server"
+    image="php7.2"
+    template="basic-php-command"
+    ports=["8080:8080"]
+    isinteractive=true
+    command="-S"
+    additionalArgs = ["0.0.0.0:8080","index.php"]

@@ -9,5 +9,8 @@
         "phpmd/phpmd": "^2.6",
         "squizlabs/php_codesniffer": "*",
         "phpunit/phpunit": "^6.5"
+    },
+    "require": {
+        "twig/twig": "^2.0"
     }
 }
