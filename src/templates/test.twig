@@ -7,13 +7,17 @@
 
 <h1>My Webpage</h1>
 
+{% assert my_view_variable '\\DroxyDemo\\ViewModel' %}
+{% assert my_view_variable "\\DroxyDemo\\PackageA\\ClassA" %}
 
-{% assert my_view_variable "DroxyDemo\\ViewModel" %} {% endassert %}
 <br/>
 {{ a_variable }}
+{{ my_view_variable.getText() }}
+
 <br/>
 {{ lipsum(40) }}
 <br/>
 DONE
 </body>
 </html>
+
